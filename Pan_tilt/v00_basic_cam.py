@@ -1,7 +1,7 @@
 import cv2
 
 # Open the webcam
-webcam = cv2.VideoCapture(0)
+webcam = cv2.VideoCapture(0, cv2.CAP_V4L2)
 
 # Check if webcam is opened correctly
 if not webcam.isOpened():
